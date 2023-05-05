@@ -48,6 +48,6 @@ int main() {
     std::cout << nestedParens("(((") << std::endl;         // false (0)
     std::cout << nestedParens("(()") << std::endl;         // false (0)
     std::cout << nestedParens(")(") << std::endl;          // false (0)
-    std::cout << nestedParens("a(b)c") << std::endl;       // false (0)
+    std::cout << nestedParens("a(b)c") << std::endl;       // false (0) 
 
 }
