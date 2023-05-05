@@ -60,9 +60,16 @@ int sumRange(int left, int right)
 
 int sumArray(int *arr, int size)
 {
-    return arr[0] + sumArray(arr + 1, size - 1); //recursive call that computes & returns the sum of all the elements in the array
-                                                //adds the first element to the sum of the rest of the elements
-                                                //continues until size == 0
+  if (size == 0) //if true
+  {
+    return 0; //return 0 bc the sum of an empty array is 0
+  }
+  else
+  {
+    return arr[0] + sumArray(arr + 1, size - 1); //recursive call that computes the sum of all the nums in the array
+                                                 //adds the first num to the sum of the rest of the nums in the array
+                                                 //continues until size == 0
+  }
 }
 
 //Task D: Write a new function bool isAlphanumeric (string s) which returns true if all chars
